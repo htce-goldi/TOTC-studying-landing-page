@@ -1,0 +1,258 @@
+/*colors*/
+$primary: #49BBBD;
+$accent: #F88C3D;
+$text-white: #FFFFFF;
+$text-light: #FFFFFFcc;
+$text-dark: #252641;
+$footer-text: #83839A;
+$btn-bg-light: rgba(255, 255, 255, 0.3);
+$footer-color: #1F1F3D; 
+
+
+@import './../../node_modules/bootstrap/scss/functions';
+@import './../../node_modules/bootstrap/scss/variables';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #fff;
+  color: $text-dark;
+  line-height: 1.6;
+}
+
+//Header
+
+header {
+  .navbar {
+    background: $primary;
+    padding: 15px 60px;
+
+    .navbar-brand img {
+      height: 60px;
+    }
+
+    .navbar-nav {
+      gap: 25px;
+
+      .nav-link {
+        color: $text-light !important;
+        font-weight: 400;
+        font-size: 16px;
+
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+
+      .btn-login {
+        background: $text-white;
+        border: none;
+        border-radius: 80px;
+        padding: 10px 30px;
+        font-weight: 500;
+        color: $text-dark;
+        transition: 0.3s;
+
+        &:hover {
+          background: $accent;
+          color: $text-white;
+        }
+      }
+
+      .btn-signup {
+        background: $btn-bg-light;
+        border: none;
+        border-radius: 80px;
+        padding: 10px 30px;
+        font-weight: 500;
+        color: $text-light;
+        transition: 0.3s;
+
+        &:hover {
+          background: $primary;
+          color: $text-white;
+        }
+      }
+    }
+  }
+}
+
+
+// Footer
+
+.footer {
+  background: $footer-color;
+  color: $text-white;
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: auto;
+
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footer-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+
+      img {
+        height: 4.5rem;
+      }
+
+      .divider {
+        width: 1px;
+        height: 60px;
+        background: $footer-text;
+      }
+
+      .footer-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-weight: 600;
+        line-height: 100%;
+
+        .line1,
+        .line2 {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .newsletter {
+    margin-bottom: 40px;
+
+    h4 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: $text-light;
+    }
+
+    form {
+      display: flex;
+      justify-content: center;
+
+      input {
+        border-radius: 40px;
+        border: 1px solid $footer-text;
+        padding: 10px 18px;
+        outline: none;
+        width: 250px;
+        margin-right: 10px;
+        background: transparent;
+        color: $footer-text;
+
+        &::placeholder {
+          color: $footer-text;
+        }
+      }
+
+      .btn-subscribe {
+        background: $primary;
+        border: none;
+        border-radius: 40px;
+        padding: 10px 24px;
+        font-weight: 500;
+        color: $text-white;
+        transition: 0.3s;
+
+        &:hover {
+          background: $accent;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 40px;
+
+    .footer-links {
+      margin-bottom: 20px;
+
+      li {
+        display: inline-block;
+        margin: 0 10px;
+        position: relative;
+        padding: 0 10px;
+
+        &:not(:first-child)::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 16px;
+          width: 1px;
+          background-color: $footer-text;
+        }
+
+        a {
+          color: $footer-text;
+          text-decoration: none;
+          transition: 0.3s;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .copyright {
+      margin-top: 16px;
+      color: $footer-text;
+      font-size: 13px;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+
+    h1 {
+      font-size: 32px;
+    }
+
+    .watch-section {
+      justify-content: center;
+    }
+  }
+
+  .footer {
+    .newsletter form {
+      flex-direction: column;
+
+      input {
+        border-radius: 40px;
+        margin-bottom: 0.8rem;
+        width: 100%;
+      }
+
+      .btn-subscribe {
+        width: 100%;
+        border-radius: 40px;
+      }
+    }
+  }
+}
+
+@import './../../node_modules/bootstrap/scss/bootstrap.scss';
