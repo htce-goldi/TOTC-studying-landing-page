@@ -1,0 +1,204 @@
+.what {
+  color :#2F327D !important;
+}
+
+.text-accent {
+  color:  #00CBB8 !important;
+}
+
+
+
+.role-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: auto;
+  display: flex;
+  align-items: center;   
+  justify-content: center;
+
+   
+}
+.role-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;  
+  border-radius: 20px; 
+  display: block;
+  gap: 10px;
+}
+
+
+.role-card .overlay {
+  position: absolute;
+  color: #696984;
+  inset: 0;
+  font-family: "Poppins";
+font-weight: 400;
+font-size: 21px;
+line-height: 180%;
+letter-spacing: 2%;
+text-align: center;
+
+
+}
+
+.role-card .btn-outline-light {
+  background: transparent !important;  
+  border: 2px solid #fff !important;   
+  color: #fff !important;              
+  border-radius: 30px;               
+  padding: 10px 24px;                   
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.role-card .btn-outline-light:hover {
+  background: #fff !important;  
+  color: #000 !important;      
+}
+
+
+
+
+.role-card .card-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.role-card .btn-primary {
+  display: inline-flex;            
+  align-items: center;             
+  justify-content: center;         
+  background: #23BDEEE5 !important; 
+  border: none !important;
+  color: #fff !important;
+  border-radius: 40px;              
+  padding: 10px 40px;               
+  min-width: 200px;                 
+  font-weight: 400;
+  font-size: 0.9rem;
+  white-space: nowrap;              
+  transition: background 0.3s ease;
+}
+
+
+.role-card .btn-primary:hover {
+  background: #23BDEEE5 !important;
+  color: #FFFFFFcc !important;
+}
+
+
+//second section
+.about-section h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.4;
+  color: #2F327D;
+  margin-left: 45px;
+}
+
+.about-section h2 .highlight {
+  color: #00CBB8;
+}
+
+.about-section p {
+  color: #696984;
+  margin-left: 45px;
+  font-family: "Poppins";
+font-weight: 400px;
+font-size: 21px;
+line-height: 180%;
+letter-spacing: 2%;
+
+}
+
+.Learn-more {
+  color: #252641;
+  text-decoration: underline;
+  text-decoration-color: #555;
+  margin-left: 45px; 
+}
+
+
+.dot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #33EFA0;
+  position: absolute;
+}
+
+.dot-start {
+  top: -10px;
+  left: 25px;
+    z-index: -1; 
+  background: #33EFA0; 
+
+}
+
+.dot-end {
+  width: 20px;
+  height: 20px;
+  bottom: 100px;
+left: 630px;
+  background:#33EFA0; 
+}
+
+.video-card {
+  position: relative;
+  display: inline-block;
+}
+
+.video-card img {
+  border-radius: 12px;
+  max-width:90%;
+margin-left: 30px;
+
+}
+.play-btn img {
+  position: absolute;
+  width: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  z-index:2;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+// .play-btn img {
+//   width: 100%;   
+// }
+
+.square {
+  position: absolute;
+  border-radius: 12px;   
+  z-index: -1;           
+  opacity: 0.9;          
+}
+
+.square-top {
+  top: -15px;      
+  left: 10px;
+  width: 100px;     
+  height: 100px;
+  background:#23BDEE; 
+}
+
+.square-bottom {
+  bottom: -15px;
+  right: 20px;
+  width: 120px;     
+  height: 120px;
+  background: #33EFA0;
+}
+

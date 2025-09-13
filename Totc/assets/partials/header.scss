@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #49BBBD;
+  color: #252641;
+  line-height: 1.6;
+}
+
+//Header
+
+header {
+  .navbar {
+    background: #49BBBD;
+    padding: 15px 60px;
+
+    .navbar-brand img {
+      height: 60px;
+    }
+
+    .navbar-nav {
+      gap: 25px;
+
+      .nav-link {
+        color: #FFFFFFcc !important;
+        font-weight: 400;
+        font-size: 20px;
+
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+
+      .btn-login {
+        background: #FFFFFF;
+        border: none;
+        border-radius: 80px;
+        padding: 10px 30px;
+        font-weight: 500;
+        color: #252641;
+        transition: 0.3s;
+
+        &:hover {
+          background: #F88C3D;
+          color: #FFFFFF;
+        }
+      }
+
+      .btn-signup {
+        background: rgba(255, 255, 255, 0.3);
+        border: none;
+        border-radius: 80px;
+        padding: 10px 30px;
+        font-weight: 500;
+        color: #FFFFFFcc;
+        ;
+        transition: 0.3s;
+
+        &:hover {
+          background: #49BBBD;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}

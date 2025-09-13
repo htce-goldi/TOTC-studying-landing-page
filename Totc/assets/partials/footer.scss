@@ -1,0 +1,205 @@
+.footer-section{
+    background-color:#252641;
+
+    input{
+        background-color: transparent;
+        
+        
+        border-color: $secondary;
+        
+    }
+    p{
+        color: $indigo-100;
+    }
+
+    span{
+        height: 83px;
+        width: 2px;
+        background-color:$gray-500;
+        &:hover{
+            background-color: blue;
+        }
+
+    }
+    .div{
+        span{
+            height: 17px;
+            width: 2px;
+            background-color: $indigo-100;
+        }
+    }
+
+    
+}
+@media (min-width: 992px) {
+  .w-lg-25 {
+     width: 25% !important;
+  }
+}
+
+
+
+.footer {
+  background: $footer-color;
+  color: $text-white;
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: auto;
+
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footer-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+
+      img {
+        height: 4.5rem;
+      }
+
+      .divider {
+        width: 1px;
+        height: 60px;
+        background: $footer-text;
+      }
+
+      .footer-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-weight: 600;
+        line-height: 100%;
+
+        .line1,
+        .line2 {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .newsletter {
+    margin-bottom: 40px;
+
+    h4 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: $text-light;
+    }
+
+    form {
+      display: flex;
+      justify-content: center;
+
+      input {
+        border-radius: 40px;
+        border: 1px solid $footer-text;
+        padding: 10px 18px;
+        outline: none;
+        width: 250px;
+        margin-right: 10px;
+        background: transparent;
+        color: $footer-text;
+
+        &::placeholder {
+          color: $footer-text;
+        }
+      }
+
+      .btn-subscribe {
+        background: $primary;
+        border: none;
+        border-radius: 40px;
+        padding: 10px 24px;
+        font-weight: 500;
+        color: $text-white;
+        transition: 0.3s;
+
+        &:hover {
+          background: $accent;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 40px;
+
+    .footer-links {
+      margin-bottom: 20px;
+
+      li {
+        display: inline-block;
+        margin: 0 10px;
+        position: relative;
+        padding: 0 10px;
+
+        &:not(:first-child)::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 16px;
+          width: 1px;
+          background-color: $footer-text;
+        }
+
+        a {
+          color: $footer-text;
+          text-decoration: none;
+          transition: 0.3s;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .copyright {
+      margin-top: 16px;
+      color: $footer-text;
+      font-size: 13px;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+
+    h1 {
+      font-size: 32px;
+    }
+
+    .watch-section {
+      justify-content: center;
+    }
+  }
+
+  .footer {
+    .newsletter form {
+      flex-direction: column;
+
+      input {
+        border-radius: 40px;
+        margin-bottom: 0.8rem;
+        width: 100%;
+      }
+
+      .btn-subscribe {
+        width: 100%;
+        border-radius: 40px;
+      }
+    }
+  }
+}
+

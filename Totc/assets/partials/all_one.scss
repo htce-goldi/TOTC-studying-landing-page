@@ -1,0 +1,104 @@
+.features {
+  background: #fff;
+}
+
+.features .section-title {
+  font-size: 1.70rem;
+  font-weight: 700;
+  color: #252641;
+  margin-bottom: 1.5rem;
+}
+
+.all-in-one {
+  color: #2F327D;
+}
+
+.cloud {
+  color: #00CBB8;
+}
+
+
+.features .section-subtitle {
+  font-size: 1.10rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 6rem;
+}
+
+.features .feature-card {
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 3rem 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.features .icon-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+}
+
+.features .feature-card h5 {
+  font-weight: 500;
+  color: #2F327D;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.features .feature-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0 auto;
+  max-width: 260px;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.features .feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+
+.features .icon-circle i {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.features .row {
+  display: flex;
+  justify-content: center;
+  gap: 0.50rem;
+  flex-wrap: wrap;
+}
+
+.features .icon-circle img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-left: 10px;
+}

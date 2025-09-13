@@ -1,0 +1,104 @@
+.our-success {
+  text-align: center;
+  padding: 80px 0;
+  font-family: "Buenos Aires Trial", sans-serif;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: #010514;
+    max-width: 610px;
+    margin: 0 auto 50px;
+    font-size: 1.2rem;
+
+    font-family: "Buenos Aires Trial";
+    font-weight: 400;
+    font-style: "Regular";
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    text-align: center;
+
+  }
+
+  .stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+
+    .stat {
+      text-align: center;
+
+      h3 {
+        font-size: 4rem;
+        font-weight: 300;
+        background: linear-gradient(80deg, #136CB5, #49BBBD);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: -10px;
+        // font-family: 'Buenos Aires Trial';
+
+
+
+      }
+
+      p {
+        margin-top: 5px;
+        color: #010514CC;
+        font-size: 2rem;
+        font-weight: 300;
+        font-family: "Buenos Aires Trial";
+      }
+    }
+  }
+}
+
+
+@media (max-width: 576px) {
+  .our-success {
+    padding: 50px 20px;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    .stats {
+      gap: 30px;
+
+      .stat {
+        flex: 1 1 100%;
+
+        h3 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .our-success .stats .stat {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .our-success .stats .stat {
+    flex: 1 1 30%;
+  }
+}
