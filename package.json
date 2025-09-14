@@ -1,0 +1,22 @@
+{
+  "name": "totc-studying-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htce-goldi/TOTC-studying-landing-page.git"
+  },
+  "author": "Goldi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/htce-goldi/TOTC-studying-landing-page/issues"
+  },
+  "homepage": "https://github.com/htce-goldi/TOTC-studying-landing-page#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
