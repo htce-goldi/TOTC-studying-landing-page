@@ -36,13 +36,13 @@ $display-font-sizes: (
 
 
 
-@import './../partials/all_one.scss';
+@import './../partials/all_one';
 @import './../partials/banner-section';  
-@import'./../partials/what-is-totc.scss' ;
-@import './../partials/class-room';
+@import'./../partials/what-is-totc' ;
+
 @import './../partials/explore';
 @import './../partials/footer';
-@import './../partials/for-student';
+
 @import './../partials/header';
 @import './../partials/main-poster';
 @import './../partials/our.success';
